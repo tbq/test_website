@@ -1,7 +1,5 @@
 ## Welcome to my Test Pages
 
-### Sample Form
-
 <script>
   !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -19,12 +17,15 @@ fbq('trackSingle', '144682222847096', 'PageView');
 <form>
   <fieldset>
     <legend>Product Choices:</legend>
-  <input type="radio" name="product" value="A" checked> A<br>
-  <input type="radio" name="product" value="B"> B<br>
-  <input type="radio" name="product" value="C"> C<br>
+  <input type="radio" name="product" value="A" checked> A ($3) <br>
+  <input type="radio" name="product" value="B"> B ($4) <br>
+  <input type="radio" name="product" value="C"> C ($5) <br>
   
   Number of Products:<br> 
   <input type="text" name="num"><br>
   <input type="submit" value="Add to Cart">
   </fieldset>
 </form>
+
+
+### Go to Amazon
