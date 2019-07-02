@@ -28,4 +28,4 @@ fbq('trackSingle', '144682222847096', 'PageView');
 </form>
 
 
-### Go to [Amazon](www.amazon.com)
+### Go to [Amazon](https://www.amazon.com)
