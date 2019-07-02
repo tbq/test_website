@@ -11,6 +11,6 @@
   
   Number of Products:<br> 
   <input type="text" name="num"><br>
-  <input type="submit" value="Add to Cart!">
+  <input type="submit">
   </fieldset>
 </form>
