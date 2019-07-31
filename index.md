@@ -22,7 +22,8 @@
     <option value="10">10</option>
   </select><br><br>
   
-  Please help us click "Buy"! (don't worry, we don't charge you any $$ :) )
+  Please help us click "Buy"! (don't worry, we don't charge you any $ :) )
+  <br>
   <input type="submit" name="submit_btn" value="Buy">
   </fieldset>
 </form>
