@@ -1,12 +1,8 @@
-<script>
-function alertBuy() {
-  alert("Hello! I am an alert box!");
-}
-</script>
+
 
 ## Welcome to the Alphabet Seller
 
-<form onsubmit="alertBuy()">
+<form>
   <fieldset>
     <legend>The Alphabet:</legend>
   <input type="radio" name="product" value="A" checked> A<br>
