@@ -27,13 +27,6 @@
   </fieldset>
 </form>
 
-<script>
-function alertBuy() {
-  var product = document.getElementById("productInput").value;
-  var productNum = document.getElementById("numSelect").value;
-  
-  alert("You've just bought " + productNum + " " + product + "(s)!");
-}
-</script>
-
 ### Go to [Amazon](https://www.amazon.com)
+
+<script src="script.js"></script>
