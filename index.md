@@ -3,9 +3,9 @@
 <form onsubmit="alertBuy()">
   <fieldset>
     <legend>The Alphabet:</legend>
-  <input type="radio" name="product" value="A" checked> A<br>
-  <input type="radio" name="product" value="B"> B<br>
-  <input type="radio" name="product" value="C"> C<br>
+  <input id="productInput" type="radio" name="product" value="A" checked> A<br>
+  <input id="productInput" type="radio" name="product" value="B"> B<br>
+  <input id="productInput" type="radio" name="product" value="C"> C<br>
   
   Number of Products: 
   <select name="num">
@@ -29,7 +29,8 @@
 
 <script>
 function alertBuy() {
-  alert("Hello! I am an alert box!");
+  var product = document.getElementById("productInput").value;
+  alert("You've just bought product " + product + "(s)");
 }
 </script>
 
