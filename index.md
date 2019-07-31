@@ -20,8 +20,10 @@
     <option value="8">8</option>
     <option value="9">9</option>
     <option value="10">10</option>
-  </select><br>
-  <input type="submit" name="submit_btn" value="Add to Cart">
+  </select><br><br>
+  
+  Please help us click "Buy"! (don't worry, we don't charge you any $$ :) )
+  <input type="submit" name="submit_btn" value="Buy">
   </fieldset>
 </form>
 
