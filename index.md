@@ -8,7 +8,7 @@
   <input id="productInput" type="radio" name="product" value="C"> C<br>
   
   Number of Products: 
-  <select name="num">
+  <select id="numSelect" name="num">
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
@@ -30,7 +30,9 @@
 <script>
 function alertBuy() {
   var product = document.getElementById("productInput").value;
-  alert("You've just bought product " + product + "(s)");
+  var productNum = document.getElementById("numSelect").value;
+  
+  alert("You've just bought " productNum + " " + product + "(s)!");
 }
 </script>
 
