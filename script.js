@@ -1,5 +1,5 @@
 function alertBuy() {
-  var products = document.getElementsById("productInput");
+  var products = document.getElementsByName("product");
   var product = "A";
   for (var i = 0, length = products.length; i < length; i++) {
     if (products[i].checked) {
