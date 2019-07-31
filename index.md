@@ -1,8 +1,6 @@
-
-
 ## Welcome to the Alphabet Seller
 
-<form>
+<form onsubmit="alertBuy()">
   <fieldset>
     <legend>The Alphabet:</legend>
   <input type="radio" name="product" value="A" checked> A<br>
@@ -23,11 +21,16 @@
     <option value="10">10</option>
   </select><br><br>
   
-  Please help us click "Buy"! (don't worry, we don't charge you any $ :) )
+  Please help us click "Buy"! (don't worry, we don't charge you any $ :-) )
   <br>
   <input type="submit" name="submit_btn" value="Buy">
   </fieldset>
 </form>
 
+<script>
+function alertBuy() {
+  alert("Hello! I am an alert box!");
+}
+</script>
 
 ### Go to [Amazon](https://www.amazon.com)
