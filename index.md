@@ -1,5 +1,17 @@
 ## Welcome to the Alphabet Seller
 
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '1745846072346088',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v5.0'
+    });
+  };
+</script>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+
 <form onsubmit="alertBuy()">
   <fieldset>
     <legend>The Alphabet:</legend>
