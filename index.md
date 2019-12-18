@@ -1,24 +1,5 @@
 ## Welcome to the Alphabet Seller
 
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId            : '1745846072346088',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v5.0'
-    });
-  };
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
-
 <form onsubmit="alertBuy()">
   <fieldset>
     <legend>The Alphabet:</legend>
@@ -46,10 +27,28 @@
   </fieldset>
 </form>
 
-<div class="fb-customerchat" 
-  attribution="setup_tool"
-  page_id="1440466679404221"
-  theme_color="#BE59B9">
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v5.0'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="1440466679404221">
 </div>
 
 ### Go to [Amazon](https://www.amazon.com)
