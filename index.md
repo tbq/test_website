@@ -44,13 +44,7 @@
   js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<div></div>
-<br>
-<div
-  class="fb-customerchat"
-  attribution=setup_tool
-  page_id="1440466679404221">
-</div>
+<div class="fb-customerchat" attribution=setup_tool page_id="1440466679404221"></div>
 
 ### Go to [Amazon](https://www.amazon.com)
 
