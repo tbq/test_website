@@ -44,7 +44,6 @@
   js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<div class="fb-customerchat" attribution=setup_tool page_id="1440466679404221"></div>
 
 ### Go to [Amazon](https://www.amazon.com)
 
@@ -61,3 +60,4 @@ fbq('init', '144682222847096');
 // if you need to experiment with pixel fires, use fbq('trackSingle', '1962619450647008', 'PageView');
 fbq('trackSingle', '144682222847096', 'PageView');
 </script>
+<div class="fb-customerchat" attribution=setup_tool page_id="1440466679404221"></div>
