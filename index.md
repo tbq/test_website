@@ -47,7 +47,7 @@
 </form>
 
 <div class="fb-customerchat" 
-  attribution=setup_tool
+  attribution="setup_tool"
   page_id="1440466679404221"
   theme_color="#BE59B9">
 </div>
