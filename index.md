@@ -12,10 +12,6 @@
 </script>
 <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
 
-<div class="fb-customerchat"
- page_id="1440466679404221">
-</div>
-
 <form onsubmit="alertBuy()">
   <fieldset>
     <legend>The Alphabet:</legend>
@@ -42,6 +38,10 @@
   <input type="submit" name="submit_btn" value="Buy">
   </fieldset>
 </form>
+
+<div class="fb-customerchat"
+ page_id="1440466679404221">
+</div>
 
 ### Go to [Amazon](https://www.amazon.com)
 
