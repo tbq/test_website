@@ -1,22 +1,35 @@
 <html>
   <head>
     <script>
-      function readCookies() {
-        return document.cookie;
+      function readCookieByName(name) {
+        var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+        if (match) return match[2];
       }
 
       function displayCookies() {
-        var cookies = document.cookie;
-        console.log(cookies);
-        document.getElementById('fb_cookies').innerHTML = cookies;
+        var fbc_cookie = readCookieByName('_fbc');
+        if (fbc_cookie) {
+          document.getElementById('fbc_cookie').innerHTML = "Has FBC Cookie " + fbc_cookie;
+        } else {
+          document.getElementById('fbc_cookie').innerHTML = "Has No FBC Cookie";
+        }
+        console.log(fbc_cookie);
+        
+        var fbp_cookie = readCookieByName('_fbp');
+        if (fbp_cookie) {
+          document.getElementById('fbp_cookie').innerHTML = "Has FBP Cookie " + fbp_cookie;
+        } else {
+          document.getElementById('fbp_cookie').innerHTML = "Has No FBP Cookie";
+        }
+        console.log(fbp_cookie);
       }
 
       window.addEventListener('load', displayCookies);
-      //displayCookies();
     </script>
   </head>
   <body>
     <h2>Facebook Cookies</h2>
-    <p id="fb_cookies"></p>
+    <p>FBC Cookie: </p><p id="fbc_cookie"></p>
+    <p>FBP Cookie: </p><p id="fbp_cookie"></p>
   </body>
 </html>
