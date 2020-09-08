@@ -9,17 +9,17 @@
       function displayCookies() {
         var fbc_cookie = readCookieByName('_fbc');
         if (fbc_cookie) {
-          document.getElementById('fbc_cookie').innerHTML = "Has FBC Cookie " + fbc_cookie;
+          document.getElementById('fbc_cookie').innerHTML = "FBC Cookie: <b>Yes</b>";
         } else {
-          document.getElementById('fbc_cookie').innerHTML = "Has No FBC Cookie";
+          document.getElementById('fbc_cookie').innerHTML = "FBC Cookie: <b>No</b>";
         }
         console.log(fbc_cookie);
         
         var fbp_cookie = readCookieByName('_fbp');
         if (fbp_cookie) {
-          document.getElementById('fbp_cookie').innerHTML = "Has FBP Cookie " + fbp_cookie;
+          document.getElementById('fbp_cookie').innerHTML = "FBP Cookie: <b>Yes</b>";
         } else {
-          document.getElementById('fbp_cookie').innerHTML = "Has No FBP Cookie";
+          document.getElementById('fbp_cookie').innerHTML = "FBP Cookie: <b>No</b>";
         }
         console.log(fbp_cookie);
       }
