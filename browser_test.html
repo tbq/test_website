@@ -6,13 +6,16 @@
       }
 
       function displayCookies() {
-        document.getElementById('fb_cookies').innerHTML = readCookies();
+        var cookies = readCookies();
+        console.log(cookies);
+        document.getElementById('fb_cookies').innerHTML = cookies;
       }
 
       document.addEventListener('load', displayCookies);
     </script>
   </head>
   <body>
+    <h2>Facebook Cookies</h2>
     <p id="fb_cookies"></p>
   </body>
 </html>
