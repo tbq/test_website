@@ -36,14 +36,21 @@
       // Don't use fbq('track')! You might interfere with other people's pixels as you browse the web. Instead,
       // if you need to experiment with pixel fires, use fbq('trackSingle', '1962619450647008', 'PageView');
       fbq('trackSingle', '144682222847096', 'PageView');
-</script>
+      document.getElementById('pixel_loading').innerHTML = "Pixel loaded.";
     </script>
   </head>
   <body>
+    <h3>Pixel Loading</h3>
+    <p id="pixel_loading">Pixel not loaded.</p>
+    
+    <br/>
+    
     <h3>Facebook Cookies</h3>
     <p id="fbc_cookie"></p>
     <p id="fbp_cookie"></p>
+    
     <br/>
+    
     <h3>Links to test PCM's Click Registration</h3>
     <a id="test_pcm_no_adcampaignid_nohref" href="#0" addestination="https://www.walmart.com">Click to Check. Going nowhere (please check Console Log).</a>
     <br/>
