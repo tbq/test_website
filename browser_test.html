@@ -25,6 +25,18 @@
       }
 
       window.addEventListener('load', displayCookies);
+      
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,"script","https://connect.facebook.net/en_US/fbevents.js");
+      // If you want to add your own JS, add something like
+      fbq('init', '144682222847096');
+      // Don't use fbq('track')! You might interfere with other people's pixels as you browse the web. Instead,
+      // if you need to experiment with pixel fires, use fbq('trackSingle', '1962619450647008', 'PageView');
+      fbq('trackSingle', '144682222847096', 'PageView');
+</script>
     </script>
   </head>
   <body>
@@ -33,8 +45,8 @@
     <p id="fbp_cookie"></p>
     <br/>
     <h3>Links to test PCM's Click Registration</h3>
-    <a id="test_pcm_no_adcampaignid_nohref" href="#0" addestination="https://www.amazon.com">Click to Check. Going nowhere (please check Console Log).</a>
+    <a id="test_pcm_no_adcampaignid_nohref" href="#0" addestination="https://www.walmart.com">Click to Check. Going nowhere (please check Console Log).</a>
     <br/>
-    <a id="test_pcm_no_adcampaignid_withhref" href="https://www.amazon.com" addestination="https://www.amazon.com">Click to Check. Going to amazon.com (please check Console Log).</a>
+    <a id="test_pcm_no_adcampaignid_withhref" href="https://www.walmart.com" addestination="https://www.walmart.com">Click to Check. Going to walmart.com (please check Console Log).</a>
   </body>
 </html>
